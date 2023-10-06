@@ -1,4 +1,4 @@
-function getPhoneNumber(input) {
+function getPhoneNumber(s) {
     // Write your code here
     const getPhoneMap = {
         zero: '0',
@@ -13,10 +13,10 @@ function getPhoneNumber(input) {
         nine: '9',
     };
     
-    const words = input.split(' ');
+    const words = s.split(' ');
     let result = '';
     
-    for (const word of words){
+    for (let word of words){
         
         if (word === 'double' || words === 'triple'){
             const nextWord = words[words.indexOf(word) + 1];
